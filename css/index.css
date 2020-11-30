@@ -1,0 +1,230 @@
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.1s;
+}
+.sidenav a:hover{
+    color: #000;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: -20px;
+    color: #000;
+    margin-right: 30px;
+    text-align: right;
+    font-size: 70px;
+}
+@media screen and (max-height:450px) {
+    .sidenav{padding-top: 15px;}
+    .sidenav a{font-size: 15px;}
+}
+.blankArea{
+    padding: 30px;
+}
+.plannerArea{
+    display: flex;
+    margin: 8% 0 3% 0;
+    padding: 5%;
+    background-color: #bf836517;
+}
+.planner_sec1{
+    flex: 5;
+    position: relative;
+    box-sizing: border-box;
+}
+.planner_logo_img{
+    width: 50%;
+    height: fit-content;
+    left: 30%;
+}
+.planner_logo_img img{
+    width: 100%;
+}
+.planner_logo_caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%,-25%);
+    font-size: 5vw;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-shadow: 0 3px 0 rgba(220, 163, 41, 0.439);
+    height: fit-content;
+}
+.planner_sec2{
+    flex: 5;
+    margin-top: 5%;
+    position: relative;
+    width: 80%;
+}
+.planner_sec2 .p01{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 15px;
+    opacity: 0.8;
+    text-shadow: 0 3px 0 #635f6051;
+}
+.planner_sec2 .p02{
+    font-size: normal;
+    font-weight: bolder;
+    text-indent: 5px;
+    opacity: 0.6;
+}
+.planner_sec2 .p03{
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    bottom: -10px;
+    text-align: center;
+    right: 120px;
+    border: 1px solid #bf8365;
+    color:  #bf8365;
+    padding: 5% 3%;
+    left: 50%;
+}
+.planner_sec2 .p03:hover{
+    background-color: #bf8365;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.stylingArea{
+    display: flex;
+    padding-left: 1%;
+    margin-bottom: 50px;
+}
+.styling_sec01{
+    flex: 5;
+}
+.styling_sec02{
+    flex: 5;
+}
+.styling_grid01{
+    display: flex;
+}
+.styling_grid02{
+    display: flex;
+}
+.S_img_and_caption1{
+    display: block;
+    padding: 5%;
+    padding-bottom: 0;
+    margin-top: 15px;
+    position: relative;
+}
+.S_img_and_caption1:hover .S_caption{
+    color: #bf8365;
+    transition: 0.3s;
+}
+.S_img_and_caption1 .S_caption, .S_img_and_caption2 .S_caption{
+    font-size: small;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: 10px;
+    text-indent: 10px;
+}
+.S_img_and_caption2{
+    display: block;
+    padding: 5%;
+    margin-top: 15px;
+}
+.S_img_and_caption2:hover .S_caption{
+    color: #bf8365;
+    transition: 0.3s;
+}
+.styling_sec02{
+    padding: 5%;
+}
+.styling_title{
+    font-size: 4vw;
+    font-weight: bold;
+    text-shadow: 0 3px 0 #f00a403a;
+    margin-top: 30%;
+}
+.S_caption .cap01{
+    opacity:0.7;
+}
+.S_caption .cap02{
+    padding: 3%;
+}
+.styling_caption{
+    margin-top: 10%;
+    width: 80%;
+    font-weight: bolder;
+    opacity: 0.7;
+}
+.styling_link{
+    display: block;
+    border: 1px solid #bf8365;
+    text-align: center;
+    padding: 5% 0;
+    width: 50%;
+    margin-top: 30%;
+    margin-left: 50%;
+    color: #bf8365;
+    opacity: 1;
+    font-weight: normal;
+}
+.styling_link a{
+    color: #bf8365;
+    opacity: 1;
+}
+.styling_link:hover{
+    background-color: #bf8365;
+    transition: 0.5s;
+    color: #fff;
+}
+.invitationArea{
+    padding: 1%;
+}
+.contactArea{
+    padding: 4%;
+    background-color: #bf836517;
+    margin-bottom: 50px;
+    margin-top: 3%;
+}
+.contact_sec{
+    padding: 4%;
+}
+.contact_title .p01{
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 3px 3px rgba(189, 143, 45, 0.411);
+}
+.contact_title .p02{
+    margin-top: 30px;
+    font-weight: bolder;
+    text-indent: 3px;
+    text-align: center;
+}
+.contact_link{
+    display: block;
+    text-align: center;
+    border: 1px solid #bf8365;
+    margin-top: 5%;
+    margin-left: 25%;
+    padding: 3% 0;
+    width: 50%;
+    color: #bf8365;
+}
+.contact_link:hover{
+    background-color: #bf8365;
+    color: #fff;
+    transition: 0.5s;
+}

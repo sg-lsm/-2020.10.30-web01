@@ -1,0 +1,134 @@
+
+        body{
+            width: 100%;
+        }
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.1s;
+}
+.sidenav a:hover{
+    color: #000;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: -20px;
+    color: #000;
+    margin-right: 30px;
+    text-align: right;
+    font-size: 70px;
+}
+@media screen and (max-height:450px) {
+    .sidenav{padding-top: 15px;}
+    .sidenav a{font-size: 15px;}
+}
+        .opening_center{
+            position: relative;
+            width: 100%;
+            height: 450px;
+        }
+        .slide_title{
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 80px;
+            font-weight: bolder;
+            z-index: 3;
+        }
+        .opening_middle{
+            position: absolute;
+            text-align: center;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 18px;
+            opacity: 0.5;
+            font-weight: bold;
+            margin-top: 20px;
+            z-index: 3;
+        }
+        .opening_bg{
+            width: 100%;
+        }
+        .opening_bg img{
+            width: 100%;
+            height: 450px;
+        }
+        .middler{
+            width: 100%;
+            height: 115px;
+        }
+        .middler>.slide_detail_text{
+            width: 50%;
+            height: 90px;
+            opacity: 0.6;
+            font-weight: bold;
+            margin: 80px;
+        }
+        .profile_board{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .profile_row{
+            width: 100%;
+            margin-left: 70px;
+        }
+        .single_profile{
+            width: 40%;
+            margin: 0 16px 48px;
+            display: inline-flex;
+        }
+        .profile_pic{
+            flex: 5;
+            width: 50%;
+        }
+        .profile_pic img{
+            width: 100%;
+            max-height: 90%;
+        }
+        .profile_detail{
+            flex: 5;
+            margin: 5px 10px 5px 10px;
+        }
+        .slide_post_title{
+            font-weight: bolder;
+            font-size: larger;
+            margin: 0 0 3px;
+        }
+        .slide_detail_text{
+            opacity: 0.7;
+            font-weight: bolder;
+            font-size: 14px;
+            margin: 10px 0 20px 0;
+        }
+        .slide_detail_btn{
+            border: 1px solid #bf8365;
+            margin: 4px 0 8px 0;
+            padding: 8px 12px;
+            color: #bf8365;
+            cursor: pointer;
+            text-align: center;
+            font-size: 15px;
+        }
+        .slide_detail_btn:hover{
+            background-color: #bf8365;
+            color: white;
+            transition: 0.5s;
+        }

@@ -1,0 +1,136 @@
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.1s;
+}
+.sidenav a:hover{
+    color: #000;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: -20px;
+    color: #000;
+    margin-right: 30px;
+    text-align: right;
+    font-size: 70px;
+}
+@media screen and (max-height:450px) {
+    .sidenav{padding-top: 15px;}
+    .sidenav a{font-size: 15px;}
+}
+.bodyWrap{
+    padding: 5%;
+}
+.left_right_panel{
+    display: none;
+}
+.blankArea{
+    padding: 20px;
+}
+.titleArea{
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.title_img_sec img{
+    width: 100%;
+    opacity: 0.4;
+}
+.title_caption_sec{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4em;
+    font-weight: bold;
+    opacity: 0.9;
+    text-align: center;
+}
+.sub_title_caption_sec{
+    position: absolute;
+    margin-top: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+    text-align: center;
+    top: 60%;
+    left: 60%;
+    transform: translate(-60%,-60%);
+}
+.sliderArea{
+    display:inline-flex;
+    margin-bottom: 30px;
+}
+.slider_container{
+    flex:3.5;
+    padding-left: 0;
+    display: block;
+}
+.slider_side_caption{
+    flex:6.5;
+    padding: 5%;
+    padding-top: 0;
+}
+.slider_side_caption .p01{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.slider_side_caption .p02{
+    margin-bottom: 45px;
+}
+.slider_side_link{
+    display: block;
+    border: 1px solid#bf8365;
+    color: #bf8365;
+    text-align: center;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    font-weight: bold;
+}
+.slider_side_link:hover{
+    background-color: #bf8365;
+    color: #fff;
+    transition: 0.5s;
+}
+.img_and_caption{
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    padding: 5%;
+}
+.caption_section .p01{
+    margin-top: 5px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+.caption_section .p02{
+    border-left: 3px solid #bf8365;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: larger;
+    font-weight: bold;
+}
+.img_section:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}

@@ -1,0 +1,100 @@
+.navTop {
+    position: fixed;
+    height: 70px;
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.1s;
+}
+.sidenav a:hover{
+    color: #000;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: -20px;
+    color: #000;
+    margin-right: 30px;
+    text-align: right;
+    font-size: 70px;
+}
+@media screen and (max-height:450px) {
+    .sidenav{padding-top: 15px;}
+    .sidenav a{font-size: 15px;}
+}
+.navTop::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav_container {
+    display: flex;
+    height: 70px;
+}
+.logo {
+    display: inline-block;
+    flex: 3;
+    margin-top: 15px;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.navMain {
+    display: inline-block;
+    flex: 6;
+    position: relative;
+}
+
+.navMain ul {
+    display: flex;
+    position: absolute;
+    right: 5%;
+}
+
+.navMainControl {
+    flex: 2;
+    padding: 10px;
+}
+
+.openHB {
+    flex: 1;
+    position: relative;
+}
+
+.hamLine {
+    width: 35px;
+    height: 5px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.change .HB1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .HB2 {
+    opacity: 0;
+}
+
+.change .HB3 {
+    transform: rotate(45deg) translate(-9px, -6px);
+}

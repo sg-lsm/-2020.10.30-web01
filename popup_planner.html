@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header,footer copy.css">
+    <script src="js/main/main.js"></script>
+    <script src="js/main/planner.js"></script>
+    <script src="js/main/planner_more.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .navTop{
+            background-color: #fff;
+        }
+        .blankArea{
+            padding-top: 120px;
+        }
+        .back_to{
+            display: inline-block;
+            border: 1px solid;
+            padding: 8px;
+            font-weight: bold;
+            opacity: .7;
+        }
+        .back_to:hover{
+            opacity: 1;
+        }
+        .plannerMore{
+            padding: 10px;
+            margin-bottom: 5%;
+        }
+        .title_and_caption{
+            display: flex;
+            box-sizing: border-box;
+        }
+        .title{
+            padding: 10%;
+        }
+        .title_p01{
+            font-size: xx-large;
+            font-weight: bolder;
+            opacity: 0.8;
+        }
+        .title_p02{
+            font-size: larger;
+            text-align: center;
+            font-weight: bold;
+            opacity: 0.6;
+        }
+        .caption{
+            padding: 10%;
+        }
+        .caption1{
+            font-weight: bold;
+            opacity: 0.7;
+        }
+        .caption2{
+            width: 70%;
+            margin-top: 20%;
+            border: 1px solid #bf8365;
+            padding: 5%;
+            text-align: center;
+        }
+        .caption2 a{
+             color: #bf8365;
+             font-size: small;
+        }
+        .caption2:hover{
+            font-weight: bold;
+        }
+        .image img{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <!-- header부분 -->
+    <div class="navTop">
+        <div class="nav_container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="로고"></a>
+            </div>
+            <div class="navMain">
+                <ul>
+                    <a href="styling.html"><li class="navMainControl">Styling</li></a>
+                    <a href="planner.html"><li class="navMainControl">Planner</li></a>
+                    <a href="collection.html"><li class="navMainControl">Collection</li></a>
+                    <a href="location.html"><li class="navMainControl">Location</li></a>
+                    <a href="contact.html"><li class="navMainControl">Contact</li></a>
+                </ul>
+            </div>
+           <div class="openHB" onclick="openNav()">
+                <div class="hamLine HB1"></div>
+                <div class="hamLine HB2"></div>
+                <div class="hamLine HB3"></div>
+            </div>
+            <div class="sidenav" id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
+                <a href="styling.html">Styling</a>
+                <a href="planner.html">Planner</a>
+                <a href="collection.html">Collection</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+            </div>         
+    </div>
+    <!-- body부분 -->
+        <div class="blankArea"></div>
+        <div class="bodyWrap">
+            <span class="back_to">
+                <a href="planner.html">&blacktriangleleft; 뒤로가기</a>
+            </span>
+            <div class="plannerArea">
+                <div class="plannerMore">
+                    <div class="title_and_caption">
+                        <div class="title">
+                            <div class="title_p01">
+                            김상혁 &amp; 이지희 <br /><br />
+                            </div>
+                            <div class="title_p02">
+                            Styling by 신보선
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <div class="caption1">
+                                로맨틱한 신랑님과 사랑스러운 신부님의 만남을 이미지하여 스타일링하였습니다.<br /><br />
+                                -Wedding Planner 신보선
+                            </div>
+                            <div class="caption2">
+                                <a href="question.html">
+                                    웨딩스타일링 문의하기
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/woman-5612838_1920.jpg" alt="">
+                        <img src="img/palace-3674719_1920.jpg" alt="">
+                        <img src="img/sea_bride.jpg" alt="">
+                        <img src="img/wedding-dresses-1486247_1920.jpg" alt="">
+                        <img src="img/wedding-dresses-1486244_1920.jpg" alt="">
+                        <img src="img/veil-1486238_1920.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- footer부분 -->
+    <div class="footer">
+        <div class="footer_sec1">
+            <div class="footer_logo">
+                <img src="img/logo.png" alt="로고">
+            </div>
+            <div class="footer_sns">
+                <a href="#"><img src="img/youtube icon.png" alt="유튜브 아이콘"></a>
+                <a href="#"><img src="img/insta icon.png" alt="인스타그램 아이콘"></a>
+                <a href="#"><img src="img/tweet icon.png" alt="트위터 아이콘"></a>
+                <a href="#"><img src="img/facebook icon.png" alt="페이스북 아이콘"></a>
+            </div>
+        </div>
+        <div class="footer_sec2">
+            <div class="address">
+                <p class="add1">경기도 성남시 분당구 돌마로 73 7층</p>
+                <p class="add2">T. 031-719-3688</p>
+                <p class="add2">F. 031-719-3688</p>
+                <p class="add3">http://sn.ezenac.co.kr/</p> <hr />
+            </div>
+            <hr />
+            <div class="resist">
+                <p>사업자등록번호:865-87-00785<br />대표:엄성만</p>
+            </div>
+        </div>
+        <div class="footer_sec3">
+            <a href="#" class="more_nav">ABOUT</a>
+            <a href="#" class="more_nav">PARTNERSHIP</a>
+            <a href="#" class="more_nav">LOCATION</a>
+            <a href="#" class="more_nav">RECRUIT</a>
+            <a href="#" class="more_nav">NOTICE</a>
+        </div>
+    </div>
+</body>
+</html>

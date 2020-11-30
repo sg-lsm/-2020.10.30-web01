@@ -1,0 +1,54 @@
+.animation_canvas{
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.slider_panel{
+    width: 2800px;
+    position: relative;
+}
+.slider_image{
+    width: 400px;
+    float: left;
+}
+.control_panel{
+    position: absolute;
+    top: 245px;
+    left: 170px;
+    height: 13px;
+    overflow: hidden;
+}
+.control_button{
+    background-image: url(img/point_button.png);
+    cursor: pointer;
+    float: left;
+    position: relative;
+    width: 12px;
+    height: 46px;
+    opacity: 0.8;
+}
+.control_button:hover{
+    top: -16px;
+
+}
+.control_button.active{
+    top: -31px;
+}
+.left_right_panel{
+    position: absolute;
+}
+.left_control{
+    position: absolute;
+    left: 5px;
+    top: 130px;
+    cursor: pointer;
+    width: 10px;
+}
+.right_control{
+    position: absolute;
+    left: 380px;
+    top: 130px;
+    cursor: pointer;
+    width: 10px;
+}
